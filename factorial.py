@@ -1,9 +1,6 @@
-def factorial(x):
-    if x == 1:
-        return 1
-    else:
-        return (x * factorial(x-1))
-
-num =int(input("enter the number"))
-result = factorial(num)
-print("The factorial of", num, "is", result)
+n=int(input("enter the number:"))
+fact=1
+if n>1:
+    for i in range(1,n+1):
+        fact=fact*i;
+print("the factorial is",fact)
